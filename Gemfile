@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 ruby '2.6.6'
 
 gem 'bootsnap', require: false
+gem 'bootstrap', '~> 5.0.0.alpha3'
+
 # gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem "puma", ">= 4.3.3"
