@@ -1,4 +1,8 @@
+puts "Destroying everything"
+
 Garden.destroy_all
+puts "Destroying Done"
+puts "Setting Garden Names"
 
 garden_names = [
   "French garden",
@@ -9,6 +13,7 @@ garden_names = [
   "Walk among flowers"
 ]
 
+puts "doing stuff for each names"
 garden_names.each do |garden_name|
   garden_request = RestClient.get("https://source.unsplash.com/1200x700/?garden")
   garden = Garden.new(
@@ -27,3 +32,5 @@ garden_names.each do |garden_name|
     sleep(2)
   end
 end
+
+puts "Seeding done"
